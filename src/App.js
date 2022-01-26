@@ -6,7 +6,7 @@ import Login from './containers/Login';
 
 const App = () => {
     return (
-        <div className="container">
+        <div className="container px-5">
             <div className="row bg-secondary mb-4">
                 <div className="col-sm-4">
                     <h1 className='text-white'>Virtual Shop</h1>
