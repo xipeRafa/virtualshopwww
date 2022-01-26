@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/virtualshopwww/static/css/main.301ac897.chunk.css",
-    "main.js": "/virtualshopwww/static/js/main.caac10ca.chunk.js",
-    "main.js.map": "/virtualshopwww/static/js/main.caac10ca.chunk.js.map",
+    "main.js": "/virtualshopwww/static/js/main.ad5c6be7.chunk.js",
+    "main.js.map": "/virtualshopwww/static/js/main.ad5c6be7.chunk.js.map",
     "runtime-main.js": "/virtualshopwww/static/js/runtime-main.73d6b3e9.js",
     "runtime-main.js.map": "/virtualshopwww/static/js/runtime-main.73d6b3e9.js.map",
     "static/css/2.ef07fde4.chunk.css": "/virtualshopwww/static/css/2.ef07fde4.chunk.css",
     "static/js/2.b0a3dfe5.chunk.js": "/virtualshopwww/static/js/2.b0a3dfe5.chunk.js",
     "static/js/2.b0a3dfe5.chunk.js.map": "/virtualshopwww/static/js/2.b0a3dfe5.chunk.js.map",
     "index.html": "/virtualshopwww/index.html",
-    "precache-manifest.49e9b8fa973088820304bdcda5dff1f3.js": "/virtualshopwww/precache-manifest.49e9b8fa973088820304bdcda5dff1f3.js",
+    "precache-manifest.d7b9482fe01fca660be800cc2d70e93b.js": "/virtualshopwww/precache-manifest.d7b9482fe01fca660be800cc2d70e93b.js",
     "service-worker.js": "/virtualshopwww/service-worker.js",
     "static/css/2.ef07fde4.chunk.css.map": "/virtualshopwww/static/css/2.ef07fde4.chunk.css.map",
     "static/css/main.301ac897.chunk.css.map": "/virtualshopwww/static/css/main.301ac897.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.ef07fde4.chunk.css",
     "static/js/2.b0a3dfe5.chunk.js",
     "static/css/main.301ac897.chunk.css",
-    "static/js/main.caac10ca.chunk.js"
+    "static/js/main.ad5c6be7.chunk.js"
   ]
 }
