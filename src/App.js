@@ -1,7 +1,7 @@
 import React from 'react';
 import Cart from './containers/Cart';
 import ProductList from './containers/ProductList';
-import Login from './components/Login/Login';
+import Login from './containers/Login';
 
 
 const App = () => {

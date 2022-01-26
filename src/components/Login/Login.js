@@ -1,8 +1,7 @@
 import React, {useState} from 'react';
-import user from "../../data/users"
 import role_grants from "../../data/role_grants"
 
-const Login = () => {
+const Login = ({user}) => {
 
       const[name, setName]=useState('')
       const [password, setPassword]=useState('')
