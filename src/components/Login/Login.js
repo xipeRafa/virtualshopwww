@@ -73,7 +73,7 @@ const Login = () => {
 
 
             <button className="btn btn-success" type='submit'>
-                        {rol === '' ? 'Entrar' : rol}
+                        {rol !== '' ? 'Entrar' : rol}
             </button>
            
         </form>
