@@ -1,16 +1,14 @@
 import { getProduct } from '../ducks/products';
 
-// actions
-const CART_ADD   = 'cart/ADD';
+const CART_ADD   = 'cart/ADD'; // actions
 const CART_REMOVE = 'cart/REMOVE';
 
-// reducer
-const initialState = {
+const initialState = { // reducer
     items: [], // array of product ids
     currency: 'MEX'
 };
 
-export default function cart(state = initialState, action = {}) {
+export default function cart(state = initialState, action = {}) { //cart reducer
     switch (action.type) {
         case CART_ADD:   return handleCartAdd(state, action.payload);
         case CART_REMOVE:return handleCartRemove(state, action.payload);
@@ -26,29 +24,23 @@ function handleCartRemove(state, payload) {
     return {...state, items: state.items.filter(id => id !== payload.productId)};
 }
 
-// action creators
-export function addToCart(productId) {
+export function addToCart(productId) { // action creators
     return {
         type: CART_ADD,
-        payload: {
-            productId
-        }
+        payload: { productId }
     }
 }
 
 export function removeFromCart(productId) {
     return {
         type: CART_REMOVE,
-        payload: {
-            productId
-        }
+        payload: { productId }
     }
 }
 
-// selectors
 export function isInCart(state, props) {
     return state.cart.items.indexOf(props.id) !== -1;
-}
+}// selectors
 
 export function getItems(state, props) {
     return state.cart.items.map(id => getProduct(state, { id }));

@@ -13,4 +13,4 @@ const mapDispatchToProps = (dispatch) => ({
     removeFromCart: (id) => dispatch(removeFromCart(id))
 })
 
-export default connect(mapStateToProps, mapDispatchToProps)(Product);
+export default connect(mapStateToProps, mapDispatchToProps)(Product); // product recibe las props

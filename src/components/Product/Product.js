@@ -24,9 +24,11 @@ class Product extends Component {
                 <img src={image} alt="product" className='w-75'/>
                 <div className="caption">
                     <h3>{name}</h3>
-                    <div className="cart__price">    price: {price} {currency}  </div>
-                        <div className="cart__price"> iva : {iva.toFixed(3)} {currency} </div>
-                        <div className="cart__price">total: {priceIva.toFixed(2)} {currency} </div>
+
+                    <div className="cart__price">price: {price} {currency}  </div>
+                    <div className="cart__price"> iva : {iva.toFixed(3)} {currency} </div>
+                    <div className="cart__price">total: {priceIva.toFixed(2)} {currency} </div>
+
                     <div className="product__button-wrap">
                         <button
                             className={isInCart ? 'btn btn-danger m-3' : 'btn btn-primary m-3'}
@@ -53,14 +55,3 @@ Product.propTypes = {
 }
 
 export default Product;
-
-
-
-
-/*     let iva = price * 0.16
-    let priceIva = price+iva */
-
-
-              /*           <div className="cart__price">Precio: {price} {currency}</div>
-                        <div className="cart__price">IVA: {iva.toFixed(2)} {currency}</div>
-                        <div className="cart__price">price + IVA: {priceIva.toFixed(2)} {currency}</div> */

@@ -50,7 +50,7 @@ const Login = () => {
 
       
   return (
-        <>
+      <>
         <form onSubmit={onSubmit} className="d-flex mt-2 mb-0 justify-content-end">
 
             <input 
@@ -95,7 +95,7 @@ const Login = () => {
                         ))}
                   </div> 
             }
-        </>
+      </>
   )
 };
 
