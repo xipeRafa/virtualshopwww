@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bee7235183dbc88c230283e0e2ab4a9e",
+    "revision": "9a3ade61c0acc0052da90730fa52c0b7",
     "url": "/virtualshopwww/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/virtualshopwww/static/css/2.ef07fde4.chunk.css"
   },
   {
-    "revision": "2de2ebfedef7aa05050e",
+    "revision": "a4d46873d366eb8c5f3c",
     "url": "/virtualshopwww/static/css/main.60bf6b0e.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/virtualshopwww/static/js/2.0d9a4f89.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2de2ebfedef7aa05050e",
-    "url": "/virtualshopwww/static/js/main.18e7d517.chunk.js"
+    "revision": "a4d46873d366eb8c5f3c",
+    "url": "/virtualshopwww/static/js/main.867c7753.chunk.js"
   },
   {
     "revision": "418b85f6e10940d7deaf",
