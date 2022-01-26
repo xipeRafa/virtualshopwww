@@ -18,7 +18,7 @@ const Cart = ({ items, total, currency, removeFromCart }) => {
         <div>
             <h3>Shopping Cart</h3>
 
-            <div className="cart border p-3">
+            <div className="cart border p-3 bg-white">
                 <div className="panel panel-default">
                     <div className="panel-body">
                         {items.length > 0 && ( 

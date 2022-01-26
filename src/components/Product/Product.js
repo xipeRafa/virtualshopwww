@@ -20,7 +20,7 @@ class Product extends Component {
         let priceIva = price+iva
         
         return (
-            <div className="product thumbnail">
+            <div className="product thumbnail bg-white">
                 <img src={image} alt="product" className='w-75'/>
                 <div className="caption">
                     <h3>{name}</h3>
