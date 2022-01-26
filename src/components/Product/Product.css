@@ -1,0 +1,17 @@
+.product {
+    margin: 0;
+    overflow: auto;
+    border: 1px solid lightgray;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.product__price {
+    display: inline-block;
+    line-height: 34px;
+}
+
+.product__button-wrap {
+    float: right;
+}
