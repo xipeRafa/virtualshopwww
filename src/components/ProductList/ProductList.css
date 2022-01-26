@@ -10,3 +10,9 @@
     list-style: none;
     width: 32%;
 }
+
+@media (max-width: 769px) {
+    .product-list__item {
+        width: 100%;
+    }
+}
