@@ -73,7 +73,7 @@ const Login = () => {
 
 
             <button className="btn btn-success" type='submit'>
-                        {rol !== '' ? 'Entrar' : rol}
+                        {rol === null ? 'Entrar' : rol}
             </button>
            
         </form>
@@ -82,13 +82,15 @@ const Login = () => {
             {
                rol === '' ? '' : rol === 'user' ?
 
-                  <div className="text-white border d-flex justify-content-evenly mt-2">
+                  <div className={rol === 'user' ? 'text-white border d-flex justify-content-evenly mt-2' 
+                                                  : 'd-none'}>
                         {role_grants[0].modules.map(el => (
                               <div key={el.id}>{el.option}</div>
                         ))}
                   </div>            
                   :
-                  <div className="text-white border d-flex justify-content-evenly mt-2">   
+                  <div className={rol === 'admin' ? 'text-white border d-flex justify-content-evenly mt-2' 
+                                                   : 'd-none'}>   
                         {role_grants[1].modules.map(el => (
                              <div key={el.id}>{el.option}</div>
                         ))}
