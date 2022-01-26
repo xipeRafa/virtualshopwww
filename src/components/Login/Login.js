@@ -42,7 +42,6 @@ const Login = () => {
 
                   const getRole = (el) => el.username === rigthName ? setRole(el.role) : el
                   user.map(getRole)
-
             }else{
                   alert('your username cannot be found in the database')
             }
@@ -80,7 +79,7 @@ const Login = () => {
         
 
             {
-               rol === '' ? '' : rol === 'user' ?
+               rol === null ? '' : rol === 'user' ?
 
                   <div className={rol === 'user' ? 'text-white border d-flex justify-content-evenly mt-2' 
                                                   : 'd-none'}>

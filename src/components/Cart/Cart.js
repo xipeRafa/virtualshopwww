@@ -5,6 +5,7 @@ import Modal from 'react-modal';
 
 const Cart = ({ items, total, currency, removeFromCart }) => {
 
+
     let iva = total * 0.16
     let totalIva = total+iva
 
@@ -12,7 +13,7 @@ const Cart = ({ items, total, currency, removeFromCart }) => {
 
     function openModal() { setIsOpen(true) }
     function closeModal() { setIsOpen(false) }
-
+    
     return (
         <div>
             <h3>Shopping Cart</h3>
@@ -20,7 +21,7 @@ const Cart = ({ items, total, currency, removeFromCart }) => {
             <div className="cart border p-3">
                 <div className="panel panel-default">
                     <div className="panel-body">
-                        {items.length > 0 && (
+                        {items.length > 0 && ( 
                             <div className="cart__body">
                                 {items.map(item => (
                                     <CartItem key={item.id} {...item} onClick={() => removeFromCart(item.id)} />
@@ -30,9 +31,15 @@ const Cart = ({ items, total, currency, removeFromCart }) => {
                         {items.length === 0 && (
                             <div className="alert alert-info">Cart is empty</div>
                         )}
-                        <div className="cart__total">Precio: {total} {currency}</div>
-                        <div className="cart__total">IVA: {iva.toFixed(2)} {currency}</div>
-                        <div className="cart__total">Total: {totalIva.toFixed(2)} {currency}</div>
+                        <div className="cart__total mb-2 mt-4">
+                            <span className="text-muted">Precio: </span> {total} {currency}
+                        </div>
+                        <div className="cart__total mb-2">
+                            <span className="text-muted">Iva: </span> {iva.toFixed(2)} {currency}
+                        </div>
+                        <div className="cart__total">
+                            <span className="text-muted">Total: </span> {totalIva.toFixed(2)} {currency}
+                        </div>
                     </div>
 
                     <button onClick={openModal} className="btn btn-primary comprar mt-3">Comprar</button>
@@ -58,9 +65,15 @@ const Cart = ({ items, total, currency, removeFromCart }) => {
                             {items.length === 0 && (
                                 <div className="alert alert-info">Cart is empty</div>
                             )}
-                            <div className="cart__total">Precio: {total} {currency}</div>
-                            <div className="cart__total">IVA: {iva.toFixed(2)} {currency}</div>
-                            <div className="cart__total">Total: {totalIva.toFixed(2)} {currency}</div>
+                            <div className="cart__total mb-2 mt-4">
+                                <span className="text-muted">Precio: </span> {total} {currency}
+                            </div>
+                            <div className="cart__total mb-2">
+                                <span className="text-muted">Iva : </span> {iva.toFixed(2)} {currency}
+                            </div>
+                            <div className="cart__total">
+                                <span className="text-muted">Total: </span> {totalIva.toFixed(2)} {currency}
+                            </div>
                         </div>
                             
                         <button className='btn btn-primary border w-50'>Pagar</button>
