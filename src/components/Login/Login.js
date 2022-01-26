@@ -52,7 +52,7 @@ const Login = ({user, role_grants}) => {
         <form onSubmit={onSubmit} className="d-flex mt-2 mb-0 justify-content-end">
 
             <input 
-                  className="form-control w-25" 
+                  className="form-control w-50" 
                   autoComplete="off"
                   placeholder='Name User' 
                   style={{marginRight:'20px'}} 
@@ -61,7 +61,7 @@ const Login = ({user, role_grants}) => {
 
 
             <input 
-                  className="form-control w-25" 
+                  className="form-control w-50" 
                   placeholder='password' 
                   autoComplete="off"
                   style={{marginRight:'20px'}} 
